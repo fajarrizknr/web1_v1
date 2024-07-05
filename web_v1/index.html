@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indonesian Tourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#culture">Kebudayaan</a></li>
+                <li><a href="#tourism">Wisata</a></li>
+                <li><a href="#hotels">Hotel</a></li>
+                <li><a href="#transactions">Transaksi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="culture">
+            <h2>Kebudayaan Indonesia</h2>
+            <div class="culture-content">
+                <div class="culture-item">
+                    <h3>Tari Saman, Aceh</h3>
+                    <p>Tari Saman adalah tarian tradisional dari Aceh yang dilakukan oleh banyak penari dengan gerakan yang serempak dan dinamis.</p>
+                    <img src="images/tari saman.jpg" alt="Tari Saman">
+                </div>
+                <div class="culture-item">
+                    <h3>Upacara Ngaben, Bali</h3>
+                    <p>Ngaben adalah upacara pembakaran jenazah di Bali yang dianggap sebagai proses penyucian roh menuju alam baka.</p>
+                    <img src="images/bali.jpg" alt="Upacara Ngaben">
+                </div>
+                <div class="culture-item">
+                    <h3>Tradisi Toraja, Sulawesi Selatan</h3>
+                    <p>Tradisi Toraja dikenal dengan rumah adat Tongkonan dan upacara pemakaman yang megah dan penuh ritual.</p>
+                    <img src="images/tajora.jpg" alt="Tradisi Toraja">
+                </div>
+            </div>
+        </section>
+
+        <section id="tourism">
+            <h2>Tempat Wisata Terbaik di Indonesia</h2>
+            <div class="tourism-content">
+                <div class="tourism-spot">
+                    <h3>Raja Ampat, Papua</h3>
+                    <p>Raja Ampat terkenal dengan keindahan bawah lautnya yang memukau dan menjadi surga bagi penyelam.</p>
+                    <img src="images/raja ampat.jpg" alt="Raja Ampat">
+                </div>
+                <div class="tourism-spot">
+                    <h3>Bromo, Jawa Timur</h3>
+                    <p>Gunung Bromo menawarkan pemandangan matahari terbit yang menakjubkan dan lautan pasir yang luas.</p>
+                    <img src="images/bromo.jpg" alt="Bromo">
+                </div>
+                <div class="tourism-spot">
+                    <h3>Danau Toba, Sumatera Utara</h3>
+                    <p>Danau Toba merupakan danau vulkanik terbesar di dunia dengan pemandangan alam yang spektakuler.</p>
+                    <img src="images/danau toba.jpg" alt="Danau Toba">
+                </div>
+            </div>
+        </section>
+
+        <section id="hotels">
+            <h2>Daftar Hotel Favorit</h2>
+            <div class="hotels-content">
+                <div class="hotel">
+                    <h3>Hotel Raja Ampat Dive Lodge</h3>
+                    <p>Fasilitas: Kolam renang, Restoran, Wi-Fi</p>
+                    <p>Harga: Rp 2,000,000/malam</p>
+                    <p>Alamat: Raja Ampat, Papua</p>
+                    <img src="images/hotel raja ampat.jpg" alt="Raja Ampat Dive Lodge">
+                </div>
+                <div class="hotel">
+                    <h3>Bromo Terrace Hotel</h3>
+                    <p>Fasilitas: Parkir, Restoran, Wi-Fi</p>
+                    <p>Harga: Rp 1,500,000/malam</p>
+                    <p>Alamat: Bromo, Jawa Timur</p>
+                    <img src="images/bromo hotel.jpg" alt="Bromo Terrace Hotel">
+                </div>
+                <div class="hotel">
+                    <h3>Toledo Inn</h3>
+                    <p>Fasilitas: Kolam renang, Restoran, Wi-Fi</p>
+                    <p>Harga: Rp 1,200,000/malam</p>
+                    <p>Alamat: Danau Toba, Sumatera Utara</p>
+                    <img src="images/samosir.jpg" alt="Toledo Inn">
+                </div>
+            </div>
+        </section>
+
+        <section id="transactions">
+            <h2>Transaksi</h2>
+            <form id="transactionForm">
+                <label for="hotel">Pilih Hotel:</label>
+                <select id="hotel" name="hotel">
+                    <option value="raja_ampat_dive_lodge">Raja Ampat Dive Lodge</option>
+                    <option value="bromo_terrace_hotel">Bromo Terrace Hotel</option>
+                    <option value="toledo_inn">Toledo Inn</option>
+                </select><br>
+                <label for="checkIn">Tanggal Check-In:</label>
+                <input type="date" id="checkIn" name="checkIn"><br>
+                <label for="checkOut">Tanggal Check-Out:</label>
+                <input type="date" id="checkOut" name="checkOut"><br>
+                <button type="button" onclick="processTransaction()">Pesan Sekarang</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Indonesian Tourism. All rights reserved.</p>
+    </footer>
+</body>
+</html>
